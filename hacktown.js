@@ -56,6 +56,16 @@ function initAutocomplete() {
       } else {
         bounds.extend(place.geometry.location);
       }
+
+      // Add a info box for each marker
+      markers.forEach(function(marker) {
+      	var infowindow = new google.maps.InfoWindow({
+      		content: marker.title
+      	});
+      	marker.addListener('click', function() {
+      		infowindow.open(map, marker);
+      	})
+      })
     });
     map.fitBounds(bounds);
   });
