@@ -1,0 +1,16 @@
+body {
+	margin-left: 5%;
+	background-color: #696969;
+	}
+
+h1 {
+	color: #00FF00;
+	font-family: "AgencyFB Bold", monospace, sans-serif;
+	font-size: 50px;
+}
+
+#map{
+    width: 1000px;
+    height: 600px;
+    background-color: #CCC;
+}
