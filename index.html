@@ -3,20 +3,37 @@
 <head>
 	<title>Index</title>
 	<meta charset="utf-8">
-	<link rel='stylesheet' type ='css' href ='css/hacktown.css'>
+	<link rel='stylesheet' type ='css' href ='hacktown2.css'>
+
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
-	<script src="js/hacktown.js"></script>
+	<script src="hacktown.js"></script>
 </head>
 <body>
-	<input id="pac-input" class="controls" type="text" placeholder="Search Box">
-	<header>
-		<h1>HACKTOWN USA 26.2 <h1>
-	</header>
-		<p>
-			We have our map here
-		</p>
+	<div class="header">
+		<div class="container">
+			<h1>HACKTOWN USA 26.2 <h1>
+				<p>We have our map here!</p>
+		</div>
+	</div>
 
-	<div id = "map"></div>
+	<div class="banner">
+		<div class="container">
+			<h3>Search companies and their reviews!</h3>
+	<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+
+
+	<div class="middle">
+		<div class="container">
+			<div id = "map"></div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<p>&copy; University of Oregon Web Dev Club</p>
+		</div>
+	</div>
+
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6qeEwQI4ltlYOWSq0dPn_uzpC1sU1Vsk&libraries=places&callback=initAutocomplete"
          async defer></script>
 </body>
