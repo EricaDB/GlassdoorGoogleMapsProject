@@ -67,6 +67,9 @@ function initAutocomplete() {
       	content: new_marker.content_item
       });
       google.maps.event.addListener(new_marker, 'click', function() {
+        $.get("stockinfo", {'title': new_marker.title}, function(response) {
+          console.log(response);
+        });
       	this.infowindow.open(map, this);
       });
     });
