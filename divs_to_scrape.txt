@@ -1,6 +1,3 @@
-
-
-
 <div class="notranslate ratingNum">4.4</div>
 
 <div class="empInfo cf p notranslate"> <strong>Size</strong> <span class="empData">10000+ Employees</span> </div>
