@@ -62,7 +62,7 @@ function initAutocomplete() {
       }
 
       // Add a info box for the new marker
-      new_marker.content_item = new_marker.title + "<br>" + place.formatted_address;
+      new_marker.content_item = new_marker.title.bold() + "<br>" + place.formatted_address;
       new_marker.infowindow = new google.maps.InfoWindow({
       	content: new_marker.content_item
       });
