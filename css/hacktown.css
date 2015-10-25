@@ -1,18 +1,76 @@
-body {
-	margin-left: 5%;
-	background-color: #696969;
-	}
-
-h1 {
-	color: #00FF00;
-	font-family: "AgencyFB Bold", monospace, sans-serif;
-	font-size: 50px;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
-#map{
-    width: 1000px;
-    height: 600px;
+body {
+  font-family: "AgencyFB", monospace, sans-serif;
+  font-weight: 100px; 
+}
+
+.container {
+  margin: 0;
+  max-width: 940px;
+  padding: 0 10px;
+}
+
+.header {
+  height: 500px;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+.header .container {
+  position: relative;
+  top: 200px;
+  padding-left: 170px;
+}
+
+.header h1 {
+  color: #00FF00;
+  font-family: "AgencyFB Bold", monospace, sans-serif;
+  font-size: 75px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+.header h1:hover {
+  background: #ffffff;
+  transition: background .5s;
+}
+
+.header p {
+  color: #00FF00;
+  font-family: "AgencyFB", monospace, sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.banner {
+  height: 80px;
+  background-color: #000000;
+  margin-bottom: 100px;
+  text-align: center;
+  padding-left: 138px;
+}
+
+.banner h3 {
+  color: #FFFFFF;
+  font-family: "AgencyFB", monospace, sans-serif;
+  font-size: 35px;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+
+.middle #map {
+    width: 900px;
+    height: 500px;
     background-color: #CCC;
+    margin-top: 80px;
+    padding-left: 50px;
+    padding-bottom: 100px;
+
 }
 .controls {
   margin-top: 10px;
