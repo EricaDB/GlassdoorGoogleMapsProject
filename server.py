@@ -1,16 +1,11 @@
 from flask import Flask, request
+from flask import render_template
 
-
-app = Flask(__name__, static_url_path='')
-app.debug = True #reload self on code changes
-
+app = Flask(__name__)
 
 @app.route('/')
 def hello():
-	return app.send_static_file('index.html')
-
+	return render_template('index.html')
 
 if __name__ == '__main__':
-	app.run(host = '0.0.0.0')
-
-#run on local host port 3008
+	app.run(port = 8000)
