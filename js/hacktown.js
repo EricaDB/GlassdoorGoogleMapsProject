@@ -43,12 +43,16 @@ function initAutocomplete() {
       };
 
       // Create a marker for each place.
-      markers.push(new google.maps.Marker({
+      new_marker = new google.maps.Marker({
         map: map,
         icon: icon,
         title: place.name,
-        position: place.geometry.location
-      }));
+        position: place.geometry.location,
+        infowindow: null,
+        content_item: null
+      });
+
+      markers.push(new_marker);
 
       if (place.geometry.viewport) {
         // Only geocodes have viewport.
@@ -57,15 +61,14 @@ function initAutocomplete() {
         bounds.extend(place.geometry.location);
       }
 
-      // Add a info box for each marker
-      markers.forEach(function(marker) {
-      	var infowindow = new google.maps.InfoWindow({
-      		content: marker.title
-      	});
-      	marker.addListener('click', function() {
-      		infowindow.open(map, marker);
-      	})
-      })
+      // Add a info box for the new marker
+      new_marker.content_item = new_marker.title + "<br>" + place.formatted_address;
+      new_marker.infowindow = new google.maps.InfoWindow({
+      	content: new_marker.content_item
+      });
+      google.maps.event.addListener(new_marker, 'click', function() {
+      	this.infowindow.open(map, this);
+      });
     });
     map.fitBounds(bounds);
   });
