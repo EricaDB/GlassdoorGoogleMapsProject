@@ -6,10 +6,12 @@ html, body {
 body {
   font-family: "AgencyFB", monospace, sans-serif;
   font-weight: 100px; 
-  background-color: #696969;
+  background-image: url('https://c1.staticflickr.com/9/8478/8162177045_7ff653aaa3_b.jpg');
+  background-size: 1800px, 2000px;
+  background-repeat: no-repeat;    
 }
 
-h3{
+h3 {
   text-align: center;
 }
 
@@ -20,9 +22,8 @@ h3{
 }
 
 .header {
-  height: 150px;
+  height: 200px;
   text-align: center;
-  background-color: #696969;
   background-size: 1500px 200px;
 }
 .header .container {
@@ -34,25 +35,27 @@ h3{
 .header h1 {
   color: #00FF00;
   font-family: "AgencyFB Bold", monospace, sans-serif;
-  font-size: 75px;
-  margin-top: 0;
+  font-size: 80px;
+  margin-top: 100px;
+  padding-top: 80px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.header p {
-  color: #00FF00;
+h3 {
+  color: #ffffff;
   font-family: "AgencyFB", monospace, sans-serif;
-  font-size: 50px;
+  font-size: 30px;
+  padding-top: 40px;
   text-transform: uppercase;
 }
 
 .middle #map {
-    width: 600px;
+    width: 800px;
     height: 400px;
     background-color: #CCC;
     margin-top: 80px;
-    padding-left: 400px;
+    margin-left: 230px;
     padding-bottom: 50px;
 }
 .controls {
@@ -66,7 +69,7 @@ h3{
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 .footer{
-  color:#00FF00;
+  color:#ffffff;
   text-align: center;
   padding-left: 150px;
 }
